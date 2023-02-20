@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(174, 244, 221);
+            width: 50%;
+        }
+        .form {
+            font-size: large;
+            margin: 25px;
+            width: fit-content;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 25%;
+            padding:5px;
+        }
+        .r{
+            color: rgb(8, 8, 171);
+            text-align: right;
+        }
+        .l{
+            color: orangered;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: white;background-color: rgb(255,76,0);text-align: center;">SỞ THÍCH CỦA BẠN</h2>
+    <form class="form">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="r"><label>Họ và tên &emsp;</label></td>
+                    <td colspan="3" class="l"><input type="text" name="yourname" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td class="r"><label>Email &emsp;</label></td>
+                    <td colspan="3" class="l"><input type="text" name="email" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td class="r"><label>Sở thích &emsp;</label></td>
+                    <td class="l"><input type="checkbox">Thể thao</td>
+                    <td class="l"><input type="checkbox">Âm nhạc</td>
+                    <td class="l"><input type="checkbox">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="l"><input type="checkbox">Lướt web</td>
+                    <TD class="l"><input type="checkbox">Chơi game</TD>
+                    <td class="l"><input type="checkbox">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="l"><input type="checkbox">Du lịch</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="submit" name="Smf" value="Gửi thông tin"> </td>
+                    <td><input type="reset" name="reset" value="Nhập lại"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
