@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
-            padding:0;
+            padding: 0;
             box-sizing: border-box;
         }
-        .form2 {
-            margin: 25px;
-            width: fit-content;
-            border: 2px solid rgb(174, 244, 221);
-            width: 60%;
-        }
 
-        table {
-            border-collapse: collapse;
-        }
         nav {
             width: 50%;
             height: 50px;
@@ -29,122 +21,296 @@
             text-align: center;
             vertical-align: middle;
         }
-        .nd3{
-            padding: 5px;
-            margin-left: 15px;
-            line-height: 1.5;
+
+        .form {
+            margin: 25px;
+            width: fit-content;
+            border: 2px solid rgb(34, 10, 248);
+            width: fit-content;
+
+            width: 40%;
+            justify-content: space-between;
+        }
+
+        .form2 {
+            margin: 25px;
+            width: fit-content;
+            border: 2px solid rgb(34, 10, 248);
+            width: fit-content;
+            line-height: 1.6;
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        table {
+            
+        }
+        
+        .nd {
+            margin: 25px;
+        }
+
+        .l {
+            text-align: right;
+        }
+
+        .r {
+            text-align: left;
+        }
+
+        #grad {
+            background-image: linear-gradient(rgb(120, 120, 120), black);
+            color: white;
         }
     </style>
 </head>
-<body>
-    <a href="./th1.html" style="width: fit-content; margin-right: 15px;">Bài thực hành 1 </a>
-    <a href="./th1.html #b2" style="width: fit-content; margin-right: 15px;">Bài thực hành 2</a>
-    <a href="./th3.html" style="width: fit-content; margin-right: 15px;">Bài thực hành 3</a>
-    <form class="form2">
-        <h2 id="b3" style="text-align: center; color: rgb(11, 11, 145);line-height: 0.5;">Market Research Survey</h2>
-        <h3 style="text-align: center; color: rgb(83, 82, 82);line-height: 0.5;">Please take a few moments to complete this satisfaction
-            survey.</h3>
-        <hr style="color: gray;">
-        <div class="nd3">
-        <label><b>What is your age range?</b></label>
-        <br>
-        <select name="age" style="width: 200px;">
-            <option value="0-10">0-10</option>
-            <option value="11-18">11-18</option>
-            <option value="18-24">18-24</option>
-            <option value="25-50">25-50</option>
-            <option value="51up">>50</option>
-        </select>
-        <br>
-        <label><b>What is your yearly income range?</b></label>
-        <br>
-        <select name="age" style="width: 200px;">
-            <option value="0-10">$0 - $25,000</option>
-            <option value="11-18">$25,000 - $35,000</option>
-            <option value="18-24">$35,000 - $50,000</option>
-            <option value="25-50">$50,000 - $100,000</option>
-            <option value="51up">>$100,000</option>
-        </select>
-        <br>
-        <label><b>Gender Identity</b></label>
-        <br>
-        <input type="radio" name="gender">Male <br>
-        <input type="radio" name="gender">Female <br>
-        <input type="radio" name="gender">Nonbinary <br>
-        <input type="radio" name="gender">Other <br>
-        <input type="text" style="margin-left: 25px;">
-        <br>
-        <label><b>Which of the following products have you purchased in the last 2 months. Please check all  that apply.</b></label>
-        <br>
-        <input type="checkbox">Product 1 <br>
-        <input type="checkbox">Product 2 <br>
-        <input type="checkbox">Product 3 <br>
-        <label><b>How often would you see our new product?</b></label>
-        <br>
-        <input type="radio" name="frequency">Daily <br>
-        <input type="radio" name="frequency">Weekly <br>
-        <input type="radio" name="frequency">Monthly <br>
-        <label><b>What would you pay for the new product?</b></label>
-        <br>
-        <table style="width: 100px; margin: 0px; text-align: center;">
-            <tr>
-                <td style="width: 2px;">$</td>
-                <td><input type="number" style="width: 60px;"></td>
-                <td style="width: 2px;">.</td>
-                <td><input type="number" style="width: 40px;"></td>
-            </tr>
-            <tr style="font-size: 80%;">
-                <td> </td>
-                <td>Dollars</td>
-                <td> </td>
-                <td>Cents</td>
-            </tr>
-        </table>
-        <label><b>What features would you like to see in the new product.</b></label><br>
-        <textarea name="feedback" cols="70" rows="5"></textarea>
-        <br>
-        <label><b>Please rate your level of agreement with the following statements.</b></label>
-        <table style="border: 1px solid grey; width: 100%;">
-            <thead style="background-color:  rgb(177, 241, 113);">
-                <tr>
-                    <th style="text-align: center;border: 1px solid grey;"></th>
-                    <th style="text-align: center;border: 1px solid grey;">Strongly Disagree</th>
-                    <th style="text-align: center;border: 1px solid grey;">Disagree</th>
-                    <th style="text-align: center;border: 1px solid grey;">Agree</th>
-                    <th style="text-align: center;border: 1px solid grey;">Strongly Agree</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="border: 1px solid grey;text-align: left;"><form><label><b>Our products are priced fairly</b></label></td>                    
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="price"><br>1</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="price"><br>2</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="price"><br>3</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="price"><br>4</td>                
-            </form>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid grey;text-align: left;"><form><label><b>Our products are high quality</b></label></td>                    
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="quality"><br>1</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="quality"><br>2</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="quality"><br>3</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="quality"><br>4</td>                
-            </form>
-                </tr>                <tr>
-                    <td style="border: 1px solid grey;text-align: left;"><form><label><b>You would recommend our product to a friend or coworker</b></label></td>                    
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="rcm"><br>1</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="rcm"><br>2</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="rcm"><br>3</td>
-                    <td style="border: 1px solid grey;width: 17%;text-align: center;"><input type="radio" name="rcm"><br>4</td>                
-            </form>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <input type="submit" name="Submit" value="Submit">
-    </div>
 
-        
+<body>
+    <nav style="text-align: justify; margin-right: 15px;">
+        <a href="./th1.html #b1">Bài thực hành 1.1</a>
+        <a href="./th1.html #b2">Bài thực hành 1.2</a>
+        <a href="./th2.html">Bài thực hành 2</a><br>
+        <a href="./th3.html #b3.1">Bài thực hành 3.1</a>
+        <a href="./th3.html #b3.2">Bài thực hành 3.2</a>
+        <a href="./th4.html">Bài thực hành 4</a>
+
+    </nav>
+
+    <form class="form" id="b3.1">
+        <p style="text-align: right; color: rgb(31, 31, 31);font-size: 90%;margin-right: 10px;">* denotes a required
+            field</p>
+        <div class="nd">
+            <table cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td class="l"><label>First name</label></td>
+                        <td class="r"><input required type="text" name="FirstName" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Last name</label></td>
+                        <td class="r"><input required type="text" name="LastName" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Father name</label></td>
+                        <td class="r"><input type="text" name="LastName" style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Date of Birth</label></td>
+                        <td class="r"><input required type="date" name="Birth" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Tel</label></td>
+                        <td class="r"><input required type="number" name="Tel" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>High School Name</label></td>
+                        <td class="r"><input required type="text" name="School" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Permanent Address</label></td>
+                        <td class="r"><input required type="text" name="PerAdd" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Your Level</label></td>
+                        <td class="r"><select name="level">
+                                <option value="1st">1st Year</option>
+                                <option value="2nd">2nd Year</option>
+                                <option value="3rd">3rd Year</option>
+                                <option value="4th">4th Year</option>
+                                <option value="5th">5th Year</option>
+                            </select> </td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Email</label></td>
+                        <td class="r"><input required type="text" name="Email" style="width: 250px;">&ensp;*</td>
+                    </tr>
+                    <tr>
+                        <td class="l"><label>Degree Program</label></td>
+                        <td class="r"><select name="DePro" id="">
+                                <option value="BS">BS in Pre-Med Physics</option>
+                                <option value="Mas">Master of Medicine</option>
+                                <option value="Doc">Doc of Medicine</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="grad" type="submit" value="Register" required></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </form>
+
+    <form id="b3.2" class="form2">
+        <h2 style="text-align: center;"><b>TỜ KHAI Y TẾ ĐỐI VỚI NGƯỜI</b></h2>
+        <H3 style="text-align: center;font-size: 90%;"><B>THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN
+                THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM</B></H3>
+        <H3 style="text-align: center;font-size: 90%;color: red;"><B>KHUYẾN CÁO: KHAI BÁO THÔNG TIN SAI LÀ VI PHẠM PHÁP
+                LUẬT VIỆT NAM VÀ CÓ THỂ BỊ XỬ LÝ HÌNH SỰ</B></H3>
+        <div class="nd">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 200px"><label>Cửa khẩu <span style="color:red;"><i>(*)</i></span></label></td>
+                        <td><select name="CuaKhau" required style="width: 208px;">
+                                <option value="" selected>Chọn</option>
+                                <option value="1">Tân Thanh, Lạng Sơn</option>
+                                <option value="2">Móng Cái, Quảng Ninh</option>
+                                <option value="3">Mộc Bài, Tây Ninh</option>
+                            </select></td>
+                        <td style="width: 250px;"></td>
+                        <td style="width: 250px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Họ tên (ghi chữ IN HOA) <span style="color:red;"><i>(*)</i></span></label></td>
+                        <td><input type="text" name="name" required style="width: 200px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Năm sinh <span style="color:red;"><i>(*)</i></span></label></td>
+                        <td style="text-align: left;"><select name="Tuoi" required>
+                                <option value="1990">1990</option>
+                                <option value="1990">1991</option>
+                                <option value="1990">1992</option>
+                                <option value="1990">1993</option>
+                                <option value="1990">1994</option>
+                                <option value="1990">1995</option>
+                                <option value="1990">1996</option>
+                                <option value="1990">1997</option>
+                                <option value="1990">1998</option>
+                                <option value="1990">1999</option>
+                                <option value="1990">2000</option>
+                                <option value="1990">2001</option>
+                                <option value="1990">2002</option>
+                                <option value="1990">2003</option>
+                                <option value="1990">2004</option>
+                            </select></td>
+                        <td style="width: 250px;"><label>Giới tính<span style="color:red;"><i>(*)</i></span></label>
+                            <select name="Sex" required>
+                                <option value="" selected>Chọn</option>
+                                <option value="1">Nam</option>
+                                <option value="2">Nữ</option>
+                                <option value="3">Không xác định</option>
+                            </select>
+                        </td>
+                        <td><label>Quốc tịch<span style="color:red;"><i>(*)</i></span></label>
+                            <select name="Nationality" required>
+                                <option value="" selected>Chọn</option>
+                                <option value="1">Việt Nam</option>
+                                <option value="2">Trung Quốc</option>
+                                <option value="3">Thái Lan</option>
+                                <option value="4">Lào</option>
+                                <option value="5">Campuchia</option>
+                                <option value="6">Khác</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <label>Số hộ chiếu hoặc giấy thông hành hợp pháp khác<span style="color:red;"><i>(*)</i></span></label>
+            <input type="text" name="PassNum">
+            <br>
+            <label>Thông tin đi lại<span style="color:red;"><i>(*)</i></span>
+                <input type="radio" name="vehicle" value="plane">Tàu bay
+                <input type="radio" name="vehicle" value="ship">Tàu thuyền
+                <input type="radio" name="vehicle" value="car"> Ô tô
+                <input type="radio" name="vehicle" value="other"> Khác (ghi rõ): <br>
+                <textarea name="VehOther" id="" cols="50" rows="2"></textarea>
+            </label>
+            <table style="width: 90%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 200px"><label>Số hiệu phương tiện </label></td>
+                        <td><input type="text" name="VehNum" style="width: 200px;"></td>
+                        <td style="width: 150px"><label>Số ghế (nếu có)</label></td>
+                        <td><input type="text" name="SeatNum" style="width: 200px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Ngày khởi hành<span style="color:red;"><i>(*)</i></span></label></td>
+                        <td><select name="DateStart" required>
+                                <option value="">Ngày</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <select name="MonthStart" required>
+                                <option value="">Tháng</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><select name="YearStart" required>
+                                <option value="">Năm</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </td>
+                        <td><label>Ngày nhập cảnh<span style="color:red;"><i>(*)</i></span></label></td>
+                        <td><select name="DateEnd" required>
+                                <option value="">Ngày</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <select name="MonthEnd" required>
+                                <option value="">Tháng</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><select name="YearEnd" required>
+                                <option value="">Năm</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Điểm khởi hành (tỉnh/quốc gia)</td>
+                    </tr>
+                    <tr>
+                        <td><label>Quốc gia<span style="color:red;"><i>(*)</i></span></label></td>
+                        <td><select name="NatStart" required style="width: 208px">
+                                <option value="">Chọn</option>
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Trung Quốc">Trung Quốc</option>
+                                <option value="Thái Lan">Thái Lan</option>
+                                <option value="Lào">Lào</option>
+                                <option value="Campuchia">Campuchia</option>
+                                <option value="Khác">Khác</option>
+                            </select></td>
+                        <td><label>Tỉnh<span style="color:red;"><i>(*)</i></span></label></td>
+                        <td style="width: 150px"><select name="CityStart" required style="width: 208px">
+                                <option value="">Chọn</option>
+                                <option value="Quảng Ninh">Quảng Ninh</option>
+                                <option value="Hàng Châu">Hàng Châu</option>
+                                <option value="Bangkok">Bangkok</option>
+                                <option value="Khác">Khác</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Trong vòng 14 ngày qua, Anh/Chị có đến quốc gia/vùng lãnh thổ nào không? (nếu có
+                            ghi rõ)</td>
+                        <td colspan="2"><textarea name="CountryArrive" cols="40" rows="1"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <br>
+            <input id="grad" type="submit" value="Khai báo" required>
+        </div>
+    </form>
+
 </body>
+
 </html>
